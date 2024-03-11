@@ -13,10 +13,13 @@ code {
 }
 
 .nav-container{
-  width: 30%;
-  height: 100vh;
+  width: 15%;
+  min-height: 100vh;
   background-color: #243178;
   float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav-header{
@@ -45,14 +48,17 @@ code {
 
 .list-items{
   margin: 1rem;
+  text-align: left;
+  padding: 5%;
 }
 
 button:hover{
   cursor: pointer;
 }
 
-.home{
+.home, .news, .exchanges{
   float:left;
+  margin-left: 16%;
 }
 
 .stats{
@@ -65,4 +71,89 @@ button:hover{
 
 .stats li{
   flex: 1 0 50%;
+}
+
+.crypto-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.crypto-card {
+  flex: 1 0 15%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.3); 
+  
+  margin: 10px; 
+  padding: 20px; 
+  cursor: pointer;
+}
+
+.crypto-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+
+.logo-img{
+  width: 30px;
+  height: 30px;
+}
+.news-cotainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-card {
+  flex: 1 0 20%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.3); 
+  background-color: #78b7cf;
+  margin: 10px; 
+  padding: 20px; 
+  cursor: pointer;
+  min-height: 25vh;
+  width: 23rem;
+}
+
+.news-card:last-child{
+  justify-self:start;
+}
+
+.news-card p{
+  overflow: hidden;
+  text-overflow:  ellipsis;
+}
+
+
+table{
+  width:115%;
+  border-collapse: collapse;
+  
+}
+
+thead th, tbody td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  width: 25%; /* Adjust as needed */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #d9d8d7;
+}
+
+tbody tr:hover{
+  background-color: #949391;
+  cursor: pointer;
 }
