@@ -1,4 +1,4 @@
-const Pagination = ({resultsPerPage, setCurrentPage, totalPages}) => {
+const Pagination = ({resultsPerPage, setCurrentPage, totalPages,currentPage}) => {
     
     let pages = [];
     for (let i=1;i<=totalPages;i++){
@@ -6,9 +6,12 @@ const Pagination = ({resultsPerPage, setCurrentPage, totalPages}) => {
     }
 
     return (  
-        <div>
+        <div className="pagination-container">
             {pages.map((page, index)=>{
-                return <button key={index} onClick={()=> setCurrentPage({page})}>{page}</button>
+                return <button 
+                        key={index} 
+                        onClick={()=> setCurrentPage(page)}
+                        className={currentPage === page ? "active" : ""}>{page}</button>
             })}
         </div>
     );

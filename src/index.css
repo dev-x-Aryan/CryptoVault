@@ -20,11 +20,23 @@ code {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .nav-header{
   display: flex;
   align-items: center;
+}
+
+.logo{
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-top: 5px;;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 30px;
 }
 
 .logo-text{
@@ -34,29 +46,48 @@ code {
   font-size: 20px;
 }
 
-.logo{
-  width: 50px;
-  display: inline-block;
-}
+
 
 .list{
   list-style-type: none;
-  text-align: center;
-  justify-content: left;
+  text-align: left;
+  justify-content: flex-start;
   margin-top: 30%;
+  width: 100%;
+  padding: 0%;
 }
 
 .list-items{
+  width: 94%;
   margin: 1rem;
-  text-align: left;
+  margin-left: 0;
   padding: 5%;
+  padding-left: 1%;
 }
 
-button:hover{
+.list-items button {
+  background: none;
+  border: none;
+  color: #fff;
   cursor: pointer;
+  font-size: large;
+  padding: 0.5rem 0.7rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: left;
 }
 
-.home, .news, .exchanges{
+.list-items button:hover:not(.active){
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active{
+  background-color: #2c4ee6;
+}
+
+
+.home, .news, .exchanges,.crypto{
   float:left;
   margin-left: 16%;
 }
@@ -67,28 +98,55 @@ button:hover{
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 1%;
+  background-color: #f0f0f0; /* Add a background color */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 10px;
 }
 
 .stats li{
   flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label{
+  font-weight: bolder;
+}
+
+.value{
+  padding: 0.5rem;
+  padding-left: 0%;
+  padding-top: 0.1rem;
+}
+
+.crypto{
+  justify-content: center;
 }
 
 .crypto-list {
   display: flex;
   flex-wrap: wrap; 
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .crypto-card {
-  flex: 1 0 15%; 
+  flex: 0 0 19%; 
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.3); 
-  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #ffffff;
   margin: 10px; 
   padding: 20px; 
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .crypto-header{
@@ -98,10 +156,43 @@ button:hover{
   flex-grow: 1;
 }
 
+.crypto-details {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .crypto-card {
+    flex: 1 0 calc(33% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crypto-card {
+    flex: 1 0 calc(50% - 20px);
+  }
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar{
+  margin: 2%;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #424345;
+  border-radius: 5px;
+}
 
 .logo-img{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+a{
+  color: white;
 }
 .news-cotainer {
   display: flex;
@@ -115,7 +206,8 @@ button:hover{
   flex-direction: column;
   justify-content: flex-start;
   box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.3); 
-  background-color: #78b7cf;
+  background-color: #243178;
+  color: #ffffff;
   margin: 10px; 
   padding: 20px; 
   cursor: pointer;
@@ -132,9 +224,35 @@ button:hover{
   text-overflow:  ellipsis;
 }
 
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  background-color: #539be8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-container button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-container button.active {
+  background-color: #0056b3;
+}
+
+
+
 
 table{
-  width:115%;
+  width:103%;
   border-collapse: collapse;
   
 }
