@@ -12,9 +12,9 @@ User-Friendly Interface: Intuitive design for seamless navigation and interactio
 Responsive Design: Optimized for both desktop and mobile devices, ensuring a smooth experience regardless of screen size.
 Search Functionality: Quickly find specific cryptocurrencies with a built-in search feature.
 
-**🔗 Check it Out**
-Video Demo: https://lnkd.in/gvHcxCmn
-Check it out here: https://lnkd.in/gSXVrpNx
+
+**Video Demo:** https://lnkd.in/gvHcxCmn
+**Check it out here:** https://lnkd.in/gSXVrpNx
 
 **💡 How It Works**
 CryptoVault leverages real-time API integration to provide users with up-to-date information on various cryptocurrencies. By fetching data from reputable cryptocurrency APIs, users can monitor price fluctuations and market trends in real time. The application displays essential data in a visually appealing format, making it easier to understand and analyze.
