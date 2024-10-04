@@ -25,17 +25,6 @@ Axios: For API calls and data fetching, ensuring efficient communication with th
 CSS/Styled Components: For styling and layout, enhancing the overall user experience.
 React Router: For seamless navigation between different sections of the application.
 
-**📥 Getting Started**
-Clone the repository:
-git clone https://github.com/dev-x-Aryan/CryptoVault.git
-Navigate to the project directory:
-cd CryptoVault
-Install dependencies:
-npm install
-Start the application:
-npm start
-📝 License
-This project is open-source and available under the MIT License.
 
 **💬 Future Enhancements**
 User Authentication: Implement user accounts for personalized experiences.
