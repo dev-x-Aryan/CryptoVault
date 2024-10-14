@@ -15,6 +15,7 @@ Search Functionality: Quickly find specific cryptocurrencies with a built-in sea
 
 **Video Demo:** https://lnkd.in/gvHcxCmn
 **Check it out here:** https://lnkd.in/gSXVrpNx
+**Deployed link:** https://crypto-vault-indol.vercel.app/
 
 **💡 How It Works**
 CryptoVault leverages real-time API integration to provide users with up-to-date information on various cryptocurrencies. By fetching data from reputable cryptocurrency APIs, users can monitor price fluctuations and market trends in real time. The application displays essential data in a visually appealing format, making it easier to understand and analyze.
